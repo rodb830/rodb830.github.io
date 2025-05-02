@@ -1,0 +1,46 @@
+@echo OFF
+ECHO Display batch file header information
+REM Display batch file header information
+ECHO **********************************************
+ECHO * Purpose: This batch file creates a directory
+ECHO *    tree for use in this Batch File Lab. 
+ECHO * Author: Rodney Baker
+ECHO * Date: %DATE%  Time: %TIME%
+ECHO **********************************************
+ECHO Add a Title to the Command Prompt window
+REM Add a Title to the Command Prompt window
+title Your Name - Batch File Lab Window
+ECHO.
+ECHO Create North East directory
+REM *** Create North East directory
+md "United States\North East\New York\New York City"
+md "United States\North East\Pennsylvania"
+md "United States\North East\New Jersey"
+md "United States\North East\Delaware"
+ECHO Create three files representing NYC Attractions
+REM *** Create three files representing NYC Attractions
+ECHO Welcome to the Museum of Modern Art > "United States\North East\New York\New York City\Attraction1.txt"
+ECHO Welcome to Central Park > "United States\North East\New York\New York City\Attraction2.txt"
+ECHO Welcome to Madison Square Garden > "United States\North East\New York\New York City\Attraction3.txt"
+ECHO.
+ECHO Create South East directory
+REM *** Create South East directory
+md "United States\South East\North Carolina\Raleigh"
+md "United States\South East\North Carolina\Durham"
+md "United States\South East\South Carolina"
+md "United States\South East\Georgia"
+md "United States\South East\Florida\Orlando"
+ECHO Create two files representing Raleigh Attractions
+REM *** Create two files representing Raleigh Attractions
+ECHO Welcome to the Duke Energy Center > "United States\South East\North Carolina\Raleigh\Attraction1.txt"
+ECHO Welcome to Marbles IMAX Theater > "United States\South East\North Carolina\Raleigh\Attraction2.txt"
+ECHO Create two files representing Durham Attractions
+REM *** Create two files representing Durham Attractions
+ECHO Welcome to the DPAC (Durham Performing Arts Center) > "United States\South East\North Carolina\Durham\Attraction1.txt"
+ECHO Welcome to The American Tobacco Campus > "United States\South East\North Carolina\Durham\Attraction2.txt"
+ECHO Create three files representing Orlando Attractions
+REM *** Create three files representing Orlando Attractions
+ECHO Welcome to Disney World! The Happiest Place on Earth! > "United States\South East\Florida\Orlando\Attraction1.txt"
+ECHO Welcome to Universal Studios Theme Park > "United States\South East\Florida\Orlando\Attraction2.txt"
+ECHO Welcome to SeaWorld > "United States\South East\Florida\Orlando\Attraction3.txt"
+ECHO Done!
