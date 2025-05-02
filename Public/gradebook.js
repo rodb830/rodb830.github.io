@@ -3,9 +3,9 @@ function fetchGradeData() {
     // This function will query the PostgreSQL database and return grade data
     console.log("Fetching grade data...");
     // Create a new request for HTTP data
-    let xhr + new XMLHttpRequest();
+    let xhr = new XMLHttpRequest();
     // This is the address on the machine we're asking for data
-    let apiroute + "/api/grades";
+    let apiroute = "/api/grades";
     // When the request changes status, we run this anonymous function
     xhr.onreadystatechange = function(){
         let results;
@@ -45,7 +45,7 @@ let tableElm = document.getElementById("gradebook"); // Get the gradebook table 
         );
         // Add the table data columns to the table row
         row.appendChild(columns.name);
-        row.appendChile(Columns.grade);
+        row.appendChild(columns.grade);
         // Add the row to the table itself to make the data visible
         tableElm.appendChild(row);
     });
